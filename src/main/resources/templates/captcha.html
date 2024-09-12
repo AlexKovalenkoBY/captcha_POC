@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Captcha Example</title>
+</head>
+<body>
+    <h2>Captcha Example</h2>
+    <img src="/captcha" alt="Captcha Image"/>
+    <form action="/verifyCaptcha" method="post">
+        <input type="text" name="captcha" placeholder="Enter Captcha"/>
+        <button type="submit">Verify</button>
+    </form>
+</body>
+</html>
